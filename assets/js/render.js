@@ -1,4 +1,4 @@
-import * as THREE from './threeJS/three.module.js';
+import * as THREE from './build/three.module.js';
 import {OrbitControls} from './threeJS/OrbitControls.js';
 import {GLTFLoader} from './threeJS/GLTFLoader.js';
 
@@ -20,26 +20,26 @@ function main() {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color('black');
 
-  {
-    const planeSize = 40;
-
-    const loader = new THREE.TextureLoader();
-    const texture = loader.load('https://threejsfundamentals.org/threejs/resources/images/checker.png');
-    texture.wrapS = THREE.RepeatWrapping;
-    texture.wrapT = THREE.RepeatWrapping;
-    texture.magFilter = THREE.NearestFilter;
-    const repeats = planeSize / 2;
-    texture.repeat.set(repeats, repeats);
-
-    const planeGeo = new THREE.PlaneBufferGeometry(planeSize, planeSize);
-    const planeMat = new THREE.MeshPhongMaterial({
-      map: texture,
-      side: THREE.DoubleSide,
-    });
-    const mesh = new THREE.Mesh(planeGeo, planeMat);
-    mesh.rotation.x = Math.PI * -.5;
-    scene.add(mesh);
-  }
+  // {
+  //   const planeSize = 40;
+  //
+  //   const loader = new THREE.TextureLoader();
+  //   const texture = null;//loader.load('https://threejsfundamentals.org/threejs/resources/images/checker.png');
+  //   texture.wrapS = THREE.RepeatWrapping;
+  //   texture.wrapT = THREE.RepeatWrapping;
+  //   texture.magFilter = THREE.NearestFilter;
+  //   const repeats = planeSize / 2;
+  //   texture.repeat.set(repeats, repeats);
+  //
+  //   const planeGeo = new THREE.PlaneBufferGeometry(planeSize, planeSize);
+  //   const planeMat = new THREE.MeshPhongMaterial({
+  //     map: texture,
+  //     side: THREE.DoubleSide,
+  //   });
+  //   const mesh = new THREE.Mesh(planeGeo, planeMat);
+  //   mesh.rotation.x = Math.PI * -.5;
+  //   scene.add(mesh);
+  // }
 
   {
     const skyColor = 0xB1E1FF;  // light blue
@@ -60,13 +60,13 @@ function main() {
 
   function frameArea(sizeToFitOnScreen, boxSize, boxCenter, camera) {
     const halfSizeToFitOnScreen = sizeToFitOnScreen * 0.5;
-    const halfFovY = THREE.MathUtils.degToRad(camera.fov * .5);
+    const halfFovY = THREE.MathUtils.degToRad(camera.fov * .3);
     const distance = halfSizeToFitOnScreen / Math.tan(halfFovY);
     // compute a unit vector that points in the direction the camera is now
     // in the xz plane from the center of the box
     const direction = (new THREE.Vector3())
         .subVectors(camera.position, boxCenter)
-        .multiply(new THREE.Vector3(1, 0, 1))
+        .multiply(new THREE.Vector3(0, 1, 0))
         .normalize();
 
     // move the camera to a position distance units way from the center
