@@ -1,6 +1,6 @@
-import * as THREE from './threejs/three.module.js';
-import {OrbitControls} from './threejs/OrbitControls.js';
-import {GLTFLoader} from './threejs/GLTFLoader.js';
+import * as THREE from './threeJS/three.module.js';
+import {OrbitControls} from './threeJS/OrbitControls.js';
+import {GLTFLoader} from './threeJS/GLTFLoader.js';
 
 function main() {
   const canvas = document.querySelector('#c');
