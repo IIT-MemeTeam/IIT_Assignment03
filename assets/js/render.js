@@ -73,6 +73,8 @@ function main() {
     // in whatever direction the camera was from the center already
     camera.position.copy(direction.multiplyScalar(distance).add(boxCenter));
 
+    camera.position.set(4,2.5,1);
+
     // pick some near and far values for the frustum that
     // will contain the box.
     camera.near = boxSize / 100;
