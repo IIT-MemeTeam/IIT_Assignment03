@@ -86,7 +86,7 @@ function main() {
 
   {
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('../Mimi box.gltf', (gltf) => {
+    gltfLoader.load('./Mimi box.gltf', (gltf) => {
       const root = gltf.scene;
       scene.add(root);
 
