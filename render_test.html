@@ -55,7 +55,82 @@
 						<!-- Content -->
 							<div class="wrapper">
 								<div class="inner">
-									<canvas style="width:80%" id="c"></canvas>
+									<!-- <canvas style="width:100%" id="c"></canvas> -->
+
+									<!-- Import the component -->
+									<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+									<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+									<!-- Use it like any other HTML element -->
+									<model-viewer style="width:100%; height:400px;" src="./Mimi box.glb" camera-controls autoplay animation-name="CubeAction" camera-orbit="82.5deg 58.8deg 5.683m" field-of-view="39.12deg">
+    <button class="Hotspot" slot="hotspot-1" data-position="0.7845276471389696m 0.5489326170093218m 0.6906037905091905m" data-normal="0.7745409479986658m 0.6325237702041838m -1.1552631864246545e-7m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Mimi box prototype</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="0.01633066321038984m 0.5961053967475896m 0.02933212556446052m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Speaker
+        </div>
+    </button>
+</model-viewer>
+<style>
+.Hotspot {
+    background: #fff;
+    border-radius: 32px;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 24px;
+    padding: 8px;
+    position: relative;
+    transition: opacity 0.3s;
+    width: 24px;
+}
+
+.Hotspot:not([data-visible]) {
+    background: transparent;
+    border: 4px solid #fff;
+    box-shadow: none;
+    height: 32px;
+    pointer-events: none;
+    width: 32px;
+}
+
+.Hotspot:focus {
+    border: 4px solid rgb(0, 128, 200);
+    height: 32px;
+    outline: none;
+    width: 32px;
+}
+
+.Hotspot>* {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.HotspotAnnotation {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-family: Futura, Helvetica Neue, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    left: calc(100% + 1em);
+    max-width: 300px;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 50%;
+    width: max-content;
+}
+
+.Hotspot:not([data-visible])>* {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(calc(-50% + 4px));
+    transition: transform 0.3s, opacity 0.3s;
+}
+</style>
+
 								</div>
 							</div>
 
@@ -80,7 +155,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/template.js"></script>
-			<script type="module" src="assets/js/render.js"></script>
+			<!-- <script type="module" src="assets/js/render.js"></script> -->
 
 	</body>
 </html>

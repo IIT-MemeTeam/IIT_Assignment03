@@ -4,7 +4,7 @@ import {GLTFLoader} from './threeJS/GLTFLoader.js';
 
 function main() {
   const canvas = document.querySelector('#c');
-  const renderer = new THREE.WebGLRenderer({canvas});
+  const renderer = new THREE.WebGLRenderer({canvas, antialias: true});
 
   const fov = 45;
   const aspect = 2;  // the canvas default
@@ -101,6 +101,8 @@ function main() {
 
       // set the camera to frame the box
       frameArea(boxSize * 0.5, boxSize, boxCenter, camera);
+
+      //box.rotation.x = 90;
 
       // update the Trackball controls to handle the new size
       controls.maxDistance = boxSize * 10;
