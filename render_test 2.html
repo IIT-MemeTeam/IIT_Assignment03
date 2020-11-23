@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>IT Work</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/template.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Meme Team</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="profiles.html">Team</a></li>
+								<li><a href="project.html">Project</a></li>
+								<li><a href="industry_data.html">Industry Data</a></li>
+								<li><a href="industry_data.html">IT Work</a></li>
+								<li><a href="it_technologies.html">IT Technologies</a></li>
+								<li><a href="elements.html">Elements</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Render Test</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<!-- <canvas style="width:100%" id="c"></canvas> -->
+
+									<!-- Import the component -->
+									<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+									<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+									<!-- Use it like any other HTML element -->
+									<model-viewer style="width:100%; height:400px;" src="./Mimi box.glb" camera-controls autoplay camera-orbit="82.5deg 58.8deg 5.683m" field-of-view="39.12deg">
+    <!-- <button class="Hotspot" slot="hotspot-1" data-position="0.7845276471389696m 0.5489326170093218m 0.6906037905091905m" data-normal="0.7745409479986658m 0.6325237702041838m -1.1552631864246545e-7m" data-visibility-attribute="hidden">
+        <div class="HotspotAnnotation">Mimi box prototype</div> -->
+    </button><button class="Hotspot" slot="hotspot-2" data-position="0.01633066321038984m 0.5961053967475896m 0.02933212556446052m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Speaker
+        </div>
+    </button>
+</model-viewer>
+<style>
+.Hotspot {
+    background: #fff;
+    border-radius: 32px;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 24px;
+    padding: 8px;
+    position: relative;
+    transition: opacity 0.3s;
+    width: 24px;
+}
+
+.Hotspot:not([data-visible]) {
+    background: transparent;
+    border: 4px solid #fff;
+    box-shadow: none;
+    height: 32px;
+    pointer-events: none;
+    width: 32px;
+}
+
+.Hotspot:focus {
+    border: 4px solid rgb(0, 128, 200);
+    height: 32px;
+    outline: none;
+    width: 32px;
+}
+
+.Hotspot>* {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.HotspotAnnotation {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-family: Futura, Helvetica Neue, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    left: calc(100% + 1em);
+    max-width: 300px;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 50%;
+    width: max-content;
+}
+
+.Hotspot:not([data-visible])>* {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(calc(-50% + 4px));
+    transition: transform 0.3s, opacity 0.3s;
+}
+</style>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Meme Team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/template.js"></script>
+			<!-- <script type="module" src="assets/js/render.js"></script> -->
+
+	</body>
+</html>

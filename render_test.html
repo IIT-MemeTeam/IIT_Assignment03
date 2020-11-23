@@ -12,6 +12,7 @@
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/template.css" />
+		<link rel="stylesheet" href="assets/css/modelViewer.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -55,82 +56,24 @@
 						<!-- Content -->
 							<div class="wrapper">
 								<div class="inner">
-									<!-- <canvas style="width:100%" id="c"></canvas> -->
+									<model-viewer style="width:100%; height:600px;" src="./assets/3DModel/Mimi box3.glb" reveal="interaction" camera-controls exposure="0.83" shadow-intensity="0" shadow-softness="0.61" camera-orbit="-270.6deg 64.02deg 35.73m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 35.73m">
 
-									<!-- Import the component -->
-									<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-									<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+											<div id="lazy-load-poster" slot="poster"></div>
+										  <div id="button-load" slot="poster">Load 3D Model</div>
 
-									<!-- Use it like any other HTML element -->
-									<model-viewer style="width:100%; height:400px;" src="./Mimi box.glb" camera-controls autoplay animation-name="CubeAction" camera-orbit="82.5deg 58.8deg 5.683m" field-of-view="39.12deg">
-    <!-- <button class="Hotspot" slot="hotspot-1" data-position="0.7845276471389696m 0.5489326170093218m 0.6906037905091905m" data-normal="0.7745409479986658m 0.6325237702041838m -1.1552631864246545e-7m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">Mimi box prototype</div> -->
-    </button><button class="Hotspot" slot="hotspot-2" data-position="0.01633066321038984m 0.5961053967475896m 0.02933212556446052m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">Speaker
-        </div>
-    </button>
-</model-viewer>
-<style>
-.Hotspot {
-    background: #fff;
-    border-radius: 32px;
-    border: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box;
-    cursor: pointer;
-    height: 24px;
-    padding: 8px;
-    position: relative;
-    transition: opacity 0.3s;
-    width: 24px;
-}
-
-.Hotspot:not([data-visible]) {
-    background: transparent;
-    border: 4px solid #fff;
-    box-shadow: none;
-    height: 32px;
-    pointer-events: none;
-    width: 32px;
-}
-
-.Hotspot:focus {
-    border: 4px solid rgb(0, 128, 200);
-    height: 32px;
-    outline: none;
-    width: 32px;
-}
-
-.Hotspot>* {
-    opacity: 1;
-    transform: translateY(-50%);
-}
-
-.HotspotAnnotation {
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.8);
-    display: block;
-    font-family: Futura, Helvetica Neue, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    left: calc(100% + 1em);
-    max-width: 300px;
-    padding: 0.5em 1em;
-    position: absolute;
-    top: 50%;
-    width: max-content;
-}
-
-.Hotspot:not([data-visible])>* {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(calc(-50% + 4px));
-    transition: transform 0.3s, opacity 0.3s;
-}
-</style>
-
+											<div class="Hotspot" slot="hotspot-2" data-position="-3.0781543243582963m 1.337537103174899m 0.6820668767130568m" data-normal="0m 1m 0m" data-visibility-attribute="visible" onclick="onHotSpotClicked(this)">
+									        <div class="HotspotAnnotation">Speaker</div>
+									    </div>
+											<div class="Hotspot" slot="hotspot-3" data-position="-9.732485380788823m -14.485052254486067m 1.4646939285330887m" data-normal="-0.9999997448427407m -0.0007138029362260678m 0.000028281121762835636m" data-visibility-attribute="visible" onclick="onHotSpotClicked(this)">
+									        <div class="HotspotAnnotation">USBC Charging port</div>
+									    </div>
+											<div class="Hotspot" slot="hotspot-4" data-position="2.9867221276054483m -0.3820029999776864m -3.2707882430543496m" data-normal="0.7003711062617347m -0.010225630968510471m -0.7137056465973979m" data-visibility-attribute="visible" onclick="onHotSpotClicked(this)">
+									        <div class="HotspotAnnotation">Power Button</div>
+									    </div>
+											<div class="Hotspot" slot="hotspot-5" data-position="2.4034032338807627m 0.23576681019808365m 0.7328605273029206m" data-normal="0.7745438282437909m 0.6325202432566511m 0m" data-visibility-attribute="visible" onclick="onHotSpotClicked(this)">
+									        <div class="HotspotAnnotation">Controls</div>
+									    </div>
+									</model-viewer>
 								</div>
 							</div>
 
@@ -147,6 +90,18 @@
 
 			</div>
 
+			<script>
+				function onHotSpotClicked(hotspot) {
+				  if (hotspot != null) {
+				  	var annotation = hotspot.getElementsByClassName("HotspotAnnotation")[0];
+
+				    if (annotation != null) {
+				    	annotation.toggleAttribute("visible");
+				    }
+				  }
+				}
+			</script>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -155,7 +110,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/template.js"></script>
-			<!-- <script type="module" src="assets/js/render.js"></script> -->
+			<script src="assets/js/modelViewer.js"></script>
+			<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 	</body>
 </html>
