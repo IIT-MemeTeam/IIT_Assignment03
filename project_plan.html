@@ -63,482 +63,497 @@
 									<div id="modalCaption"></div>
 								</div>
 
-								<h2 class="major">Aims</h3>
-
-								<h2 class="major">Plans and Progress</h3>
-
-								<h2 class="major">Roles</h3>
-
-								<h2 class="major">Scope and Limits</h3>
-
-								<p>
-									The scope of the project is relative to the considered
-									finalization stage based off time restraints given as well
-									individual commitments that may impede progress of the final
-									outcome. Given the current assignment deadline as it stands,
-									we have a prototype of our entertainment system that presents
-									the functionality of recording raw audio inputs and said input
-									recorded logged as an actively saved sound file. Along with
-									this is a 3rd dimensional digital visual representation as
-									designs for the product, as well place holder for a voice over
-									for the game.
-								</p>
-								<p>
-									As the scope for a whole development cycle is unfeasible give
-									our current restrictions it would be appropriate to assume
-									that the game loop the system requires for basic function may
-									not be presentable and delivered in segments as
-									aforementioned.
-								</p>
-								<p>
-									These would pertain to the basic game functions such as taking
-									the audio and saving it as a file but will not be yet able to
-									compare these audio files accurately or to an acquitted
-									standard of function that a final output would need, as well
-									as deliverable or a real-world demonstration of our final
-									product would be un-producible. Although, many examples of
-									code and hardware needed to function have been explored by
-									multiple members of the Meme Team with drawn and computer
-									drawn designs as well as working on a Raspberry Pi that is
-									recording audio input which can be seen in the protect
-									testing. Extensive research has also been put towards the
-									absent necessity through the subset tasks proposed by the Mimi
-									Box although this achievement may be unobtainable due to the
-									hypothetical global appeal of the device and vigorous testing
-									that is implied by a global scale production line that is also
-									mentioned in the testing section, an example that could be
-									given upon the long term that would not happen without backing
-									from a company or entrepreneur.
-								</p>
-								<p>
-									As the game is sound based it wouldn't be illogical to draw
-									comparison towards Sony Entertainments Sing-Star<a
-									href="#scope_1"><sup>[1]</sup></a> in which you try to imitate
-									famous singers in iconic songs and although on January 31,
-									2020 the company shut down, the proportions of the company
-									speak for themselves and in the case of long-term development
-									would see them as a milestone competitor "Sing-Star series has
-									now sold over 20 million units, Sony has announced....
-									confirmed 16 million units had been sold across PAL regions
-									alone"<a href="#scope_2"><sup>[2]</a>. This connects back to
-									the global variation required by the testing and a final
-									production line and would be considered way beyond the scope
-									of current circumstances.
-								</p>
-
 								<section>
-									<h4 class="major">References</h4>
-									<ul class="references-list">
-										<li>
-											<a id="scope_1" class="anchor"></a>
-											[1] <b>Playstation.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Singstar Celebration. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.playstation.com/en-au/games/singstar-celebration-ps4">
-											&lt;https://www.playstation.com/en-au/games/singstar-celebration-ps4/&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 20 November 2020].
-										</li>
-										<li>
-											<a id="scope_2" class="anchor"></a>
-											[2] <b>GamesIndustry.biz.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Singstar Reaches 20 Million Sales. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.gamesindustry.biz/articles/singstar-reaches-20-million-sales">
-											&lt;https://www.gamesindustry.biz/articles/singstar-reaches-20-million-sales&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 20 November 2020].
-										</li>
-									</ul>
+									<h2 class="major">Overview<h2>
+
+									<h3 class="major">Topic</h3>
+
+									<h3 class="major">Motivation</h3>
+
+									<h3 class="major">Landscape</h3>
 								</section>
 
-								<h2 class="major">Tools and Technologies</h3>
-
-								<p>
-									When producing the Mimi Box, a standalone entertainment
-									system, the two aspects to consider are the hardware in use
-									and the software, as well as two subset factors which are the
-									developmental prototype and then the final device. The primary
-									board for prototyping will be a Raspberry Pi 3 Model B Plus
-									<a href="#tools_1"><sup>[1]</sup></a> to pertain a relatively accurate representation of size
-									and power delivery, due to its "tiny credit card size... Just
-									add a keyboard, mouse, display, power supply, micro SD card
-									with installed Linux"<a href="#tools_1"><sup>[1]</sup></a>, which as stated, uses the Linux
-									operating system variant Raspbian specifically built for the
-									Pi. This would be ideal due to its distinct flexibility for
-									software development availability, testing comparison and to
-									transition the development to the final product in the event
-									of crunch time.
-								</p>
-
-								<p>
-									The final product itself would be a custom-built PCB with
-									inbuilt required hardware such as speakers, microphone and a
-									battery kit that would be mounted individually upon the PCB,
-									the prototype will require external attachments as
-									placeholders for the mounted peripherals. Our chosen
-									microphone for the prototype is a ‘SunFounder USB 2.0
-									Mini’<a href="#tools_2"><sup>[2]</sup></a>, primarily due to it’s convenient size and
-									compatibility with the chosen board during development and is
-									also the idea that was followed when selecting the battery
-									pack ‘MintyBoost Kit - v3.0’<a href="#tools_3"><sup>[3]</sup></a>. The Speaker although was more
-									aesthetically pleasing ‘Speaker pHAT’<a href="#tools_4"><sup>[4]</sup></a> while still
-									maintaining size and power efficiency but aiming for a retro
-									style that fits the protects target appeal of returning to
-									home gaming, interpersonal interactions and away from online.
-								</p>
-
-								<p>
-									The software during the development and the final product
-									differ, likewise to the hardware as in current development on
-									the Raspberry Pi 3 B Plus is using Java<a href="#tools_5"><sup>[5]</sup></a> (Java Development
-									Kit 14<a href="#tools_6"><sup>[6]</sup></a> and onto 15 depending on development period) and
-									this will be translated into Python (version 3.9) towards the
-									end of the production to reduce the complexity of the library
-									and functions called to the specific requirements of our
-									construed game modes during later program development. Beyond
-									that, the plan is to then have the custom PCB built to the
-									requirements of the program specs rather than limiting the
-									function of the game based on hardware constraints when
-									producing a final product.
-								</p>
-
 								<section>
-									<h4 class="major">References</h4>
-									<ul class="references-list">
-										<li>
-											<a id="tools_1" class="anchor"></a>
-											[1] <b>Pi Australia.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Raspberry Pi 3 Model B+. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://raspberry.piaustralia.com.au/collections/raspberry-pi-boards/products/raspberry-pi-3-model-b-plus">
-												&lt;https://raspberry.piaustralia.com.au/collections/raspberry-pi-boards/products/raspberry-pi-3-model-b-plus&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 20 November 2020].
-										</li>
-										<li>
-											<a id="tools_2" class="anchor"></a>
-											[2] <b>Amazon.com.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											SunFounder USB 2.0 Mini Microphone [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.amazon.com/dp/B01KLRBHGM/">
-												&lt;https://www.amazon.com/dp/B01KLRBHGM/&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 20 November 2020].
-										</li>
-										<li>
-											<a id="tools_3" class="anchor"></a>
-											[3] <b>Industries, A.</b>, 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Mintyboost Kit. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Adafruit.com. Available at:
-											<a target="_blank" href="https://www.adafruit.com/product/14">
-												&lt;https://www.adafruit.com/product/14&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 20 November 2020].
-										</li>
-										<li>
-											<a id="tools_4" class="anchor"></a>
-											[4] <b>Shop.pimoroni.com.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Speaker Phat – Pimoroni. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://shop.pimoroni.com/products/speaker-phat">
-												&lt;https://shop.pimoroni.com/products/speaker-phat&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 20 November 2020].
-										</li>
-										<li>
-											<a id="tools_5" class="anchor"></a>
-											[5] <b>Oracle.com.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Java Software | Oracle. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.oracle.com/java/">
-												&lt;https://www.oracle.com/java/&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 20 November 2020].
-										</li>
-										<li>
-											<a id="tools_6" class="anchor"></a>
-											[6] <b>Oracle.com.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											JDK 14 Release Notes, Important Changes, And Information. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.oracle.com/java/technologies/javase/14-relnote-issues.html">
-												&lt;https://www.oracle.com/java/technologies/javase/14-relnote-issues.html&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 20 November 2020].
-										</li>
-									</ul>
+									<h2 class="major">Detailed Description<h2>
+
+									<h3 class="major">Aims</h3>
+
+									<h3 class="major">Plans and Progress</h3>
+
+									<h3 class="major">Roles</h3>
+
+									<h3 class="major">Scope and Limits</h3>
+
+									<p>
+										The scope of the project is relative to the considered
+										finalization stage based off time restraints given as well
+										individual commitments that may impede progress of the final
+										outcome. Given the current assignment deadline as it stands,
+										we have a prototype of our entertainment system that presents
+										the functionality of recording raw audio inputs and said input
+										recorded logged as an actively saved sound file. Along with
+										this is a 3rd dimensional digital visual representation as
+										designs for the product, as well place holder for a voice over
+										for the game.
+									</p>
+									<p>
+										As the scope for a whole development cycle is unfeasible give
+										our current restrictions it would be appropriate to assume
+										that the game loop the system requires for basic function may
+										not be presentable and delivered in segments as
+										aforementioned.
+									</p>
+									<p>
+										These would pertain to the basic game functions such as taking
+										the audio and saving it as a file but will not be yet able to
+										compare these audio files accurately or to an acquitted
+										standard of function that a final output would need, as well
+										as deliverable or a real-world demonstration of our final
+										product would be un-producible. Although, many examples of
+										code and hardware needed to function have been explored by
+										multiple members of the Meme Team with drawn and computer
+										drawn designs as well as working on a Raspberry Pi that is
+										recording audio input which can be seen in the protect
+										testing. Extensive research has also been put towards the
+										absent necessity through the subset tasks proposed by the Mimi
+										Box although this achievement may be unobtainable due to the
+										hypothetical global appeal of the device and vigorous testing
+										that is implied by a global scale production line that is also
+										mentioned in the testing section, an example that could be
+										given upon the long term that would not happen without backing
+										from a company or entrepreneur.
+									</p>
+									<p>
+										As the game is sound based it wouldn't be illogical to draw
+										comparison towards Sony Entertainments Sing-Star<a
+										href="#scope_1"><sup>[1]</sup></a> in which you try to imitate
+										famous singers in iconic songs and although on January 31,
+										2020 the company shut down, the proportions of the company
+										speak for themselves and in the case of long-term development
+										would see them as a milestone competitor "Sing-Star series has
+										now sold over 20 million units, Sony has announced....
+										confirmed 16 million units had been sold across PAL regions
+										alone"<a href="#scope_2"><sup>[2]</a>. This connects back to
+										the global variation required by the testing and a final
+										production line and would be considered way beyond the scope
+										of current circumstances.
+									</p>
+
+									<section>
+										<h4 class="major">References</h4>
+										<ul class="references-list">
+											<li>
+												<a id="scope_1" class="anchor"></a>
+												[1] <b>Playstation.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Singstar Celebration. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.playstation.com/en-au/games/singstar-celebration-ps4">
+												&lt;https://www.playstation.com/en-au/games/singstar-celebration-ps4/&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 20 November 2020].
+											</li>
+											<li>
+												<a id="scope_2" class="anchor"></a>
+												[2] <b>GamesIndustry.biz.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Singstar Reaches 20 Million Sales. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.gamesindustry.biz/articles/singstar-reaches-20-million-sales">
+												&lt;https://www.gamesindustry.biz/articles/singstar-reaches-20-million-sales&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 20 November 2020].
+											</li>
+										</ul>
+									</section>
+
+									<h3 class="major">Tools and Technologies</h3>
+
+									<p>
+										When producing the Mimi Box, a standalone entertainment
+										system, the two aspects to consider are the hardware in use
+										and the software, as well as two subset factors which are the
+										developmental prototype and then the final device. The primary
+										board for prototyping will be a Raspberry Pi 3 Model B Plus
+										<a href="#tools_1"><sup>[1]</sup></a> to pertain a relatively accurate representation of size
+										and power delivery, due to its "tiny credit card size... Just
+										add a keyboard, mouse, display, power supply, micro SD card
+										with installed Linux"<a href="#tools_1"><sup>[1]</sup></a>, which as stated, uses the Linux
+										operating system variant Raspbian specifically built for the
+										Pi. This would be ideal due to its distinct flexibility for
+										software development availability, testing comparison and to
+										transition the development to the final product in the event
+										of crunch time.
+									</p>
+
+									<p>
+										The final product itself would be a custom-built PCB with
+										inbuilt required hardware such as speakers, microphone and a
+										battery kit that would be mounted individually upon the PCB,
+										the prototype will require external attachments as
+										placeholders for the mounted peripherals. Our chosen
+										microphone for the prototype is a ‘SunFounder USB 2.0
+										Mini’<a href="#tools_2"><sup>[2]</sup></a>, primarily due to it’s convenient size and
+										compatibility with the chosen board during development and is
+										also the idea that was followed when selecting the battery
+										pack ‘MintyBoost Kit - v3.0’<a href="#tools_3"><sup>[3]</sup></a>. The Speaker although was more
+										aesthetically pleasing ‘Speaker pHAT’<a href="#tools_4"><sup>[4]</sup></a> while still
+										maintaining size and power efficiency but aiming for a retro
+										style that fits the protects target appeal of returning to
+										home gaming, interpersonal interactions and away from online.
+									</p>
+
+									<p>
+										The software during the development and the final product
+										differ, likewise to the hardware as in current development on
+										the Raspberry Pi 3 B Plus is using Java<a href="#tools_5"><sup>[5]</sup></a> (Java Development
+										Kit 14<a href="#tools_6"><sup>[6]</sup></a> and onto 15 depending on development period) and
+										this will be translated into Python (version 3.9) towards the
+										end of the production to reduce the complexity of the library
+										and functions called to the specific requirements of our
+										construed game modes during later program development. Beyond
+										that, the plan is to then have the custom PCB built to the
+										requirements of the program specs rather than limiting the
+										function of the game based on hardware constraints when
+										producing a final product.
+									</p>
+
+									<section>
+										<h4 class="major">References</h4>
+										<ul class="references-list">
+											<li>
+												<a id="tools_1" class="anchor"></a>
+												[1] <b>Pi Australia.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Raspberry Pi 3 Model B+. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://raspberry.piaustralia.com.au/collections/raspberry-pi-boards/products/raspberry-pi-3-model-b-plus">
+													&lt;https://raspberry.piaustralia.com.au/collections/raspberry-pi-boards/products/raspberry-pi-3-model-b-plus&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 20 November 2020].
+											</li>
+											<li>
+												<a id="tools_2" class="anchor"></a>
+												[2] <b>Amazon.com.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												SunFounder USB 2.0 Mini Microphone [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.amazon.com/dp/B01KLRBHGM/">
+													&lt;https://www.amazon.com/dp/B01KLRBHGM/&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 20 November 2020].
+											</li>
+											<li>
+												<a id="tools_3" class="anchor"></a>
+												[3] <b>Industries, A.</b>, 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Mintyboost Kit. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Adafruit.com. Available at:
+												<a target="_blank" href="https://www.adafruit.com/product/14">
+													&lt;https://www.adafruit.com/product/14&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 20 November 2020].
+											</li>
+											<li>
+												<a id="tools_4" class="anchor"></a>
+												[4] <b>Shop.pimoroni.com.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Speaker Phat – Pimoroni. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://shop.pimoroni.com/products/speaker-phat">
+													&lt;https://shop.pimoroni.com/products/speaker-phat&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 20 November 2020].
+											</li>
+											<li>
+												<a id="tools_5" class="anchor"></a>
+												[5] <b>Oracle.com.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Java Software | Oracle. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.oracle.com/java/">
+													&lt;https://www.oracle.com/java/&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 20 November 2020].
+											</li>
+											<li>
+												<a id="tools_6" class="anchor"></a>
+												[6] <b>Oracle.com.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												JDK 14 Release Notes, Important Changes, And Information. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.oracle.com/java/technologies/javase/14-relnote-issues.html">
+													&lt;https://www.oracle.com/java/technologies/javase/14-relnote-issues.html&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 20 November 2020].
+											</li>
+										</ul>
+									</section>
+
+									<h3 class="major">Testing</h3>
+									<p>
+										From Multiple aspects it would be difficult to declare when
+										the Mimi box is a finished product as many innovations could
+										be made in series of updates or version releases. And that
+										would propose various expansions upon the available game modes
+										& or similar variations of the way the player must mimic their
+										opponent such as facial expressions,
+									</p>
+									<p>
+										In the case for the basis of a prototype the first version of
+										the Mimi box that would be considered a final product, this
+										would most likely entail the base primes of having players be
+										capable of comparing their voice recording to set a
+										score-based system this would be the most accurate
+										demonstration of the product the Meme Team intends.
+									</p>
+									<p>
+										Yet due to time confinements, having a real-world design and
+										functional program would be the most feasible. Below are
+										examples such as 3D Model, code examples toward what a
+										functional version of our device would require as well as
+										example audio output from the product.
+									</p>
+									<p>
+										Furthermore, there are multiple aspects that would benefit
+										from quality assurance. The most prevalent to mind is the
+										accuracy of compared matrix of the recorded MEL frequencies
+										which would directly determine the scale and skill ceiling,
+										this is only trial and error as the game must be within a
+										degree of accuracy that isn't so low the game requires no
+										skill and on the opposite end not too accurate as to be
+										unplayable. This would also include quality assuring the
+										physical durability of the hardware encasement to upfront
+										deliver to our target audience which would require a broad
+										demographic with diverse dialect to ensure that language
+										variants of the product are quality assured.
+									</p>
+									<p>
+										This would include most if not all available nationality's to
+										test as well as any age groups as vocal intonation varies due
+										to puberty as well “Linguistic variation, Sociolinguistic
+										Variation, Dialectal Variation and Linguistic Variables”<a
+										href="#testing_1"><sup>[1]</sup></a> which comes back to the
+										IPA<a href="#testing_2"><sup>[2]</sup></a> (International
+										phonetic alphabet) and regional to language variation which
+										would be an example of how our Mimi box fulfils its role as a
+										versatile in-home entertainment device.
+									</p>
+
+									<section>
+										<h4 class="major">References</h4>
+										<ul class="references-list">
+											<li>
+												<a id="testing_1" class="anchor"></a>
+												[1] <b>ThoughtCo.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												What Is Linguistic Variation?. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.thoughtco.com/what-is-linguistic-variation-1691242#:~:text=Dialectal%20Variation,difference%20is%20one%20of%20accent.">
+												&lt;https://www.thoughtco.com/what-is-linguistic-variation-1691242#:~:text=Dialectal%20Variation,difference%20is%20one%20of%20accent.&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 11 November 2020].
+											</li>
+											<li>
+												<a id="testing_2" class="anchor"></a>
+												[2] <b>Internationalphoneticassociation.org.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Full IPA Chart | International Phonetic Association. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.internationalphoneticassociation.org/content/full-ipa-chart">
+												&lt;https://www.internationalphoneticassociation.org/content/full-ipa-chart&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 11 November 2020].
+											</li>
+										</ul>
+									</section>
+
+									<h3 class="major">Timeframe</h3>
+
+									<h2 class="major">Risks</h3>
+									<p>
+										Development of the Mimi box as an idea was more complex than
+										originally thought as considering the manor of implementation
+										to basic components such as power source and code format where
+										reconsidered through the process.
+									</p>
+									<p>
+										A primary concern of the entertainment device is the power
+										consumption and therefore resulting game play time with our
+										prototype this issue arose in which multiple options are
+										viable but "All products covered by energy efficiency
+										regulations must meet certain requirements before they can be
+										supplied or sold in Australia or New Zealand.". This makes it
+										so we must comply to a standard of modern efficiency prior to
+										convenience which could dramatically impact the product output
+										if prototype power consumption relative to final product power
+										usage differ significantly.
+									</p>
+									<p>
+										Furthermore, the software as it is currently is recording
+										inputs from raw Hz into .Wav files, which can be seen in the
+										project testing section, is a great step in the correct
+										direction. Beyond this, comparing the files and having a
+										score-based system set around said comparisons to be the end
+										goal as a functioning game mode which may be easier with
+										Python, rather than java, the latter being the one the team
+										has chosen for the prototyping phase which could cause minor
+										disparagement in how code will function in the final product.
+										It is a delicate risk due to the amount of variation the game
+										itself must entail to be a global product that will need
+										vigorous quality assurance for various dialects which could be
+										problematic due to production time constraints, again leading
+										toward an unfavourable unit quality on launch simply due to
+										the large amount of variation that "differences between the
+										speech of men and women, different social classes, and
+										differences between age groups.
+									</p>
+									<p>
+										People will identify some of these features as marking the
+										"best" or most "beautiful" form of the language, other
+										features will be considered nonstandard or undesirable", a
+										consideration that would have to be taken by region as the
+										product is sound orientated and the inherent functional
+										quality as well as sale output  This would be riskily
+										undertaken the less testing given a particular language or
+										dialect variation and a considerable aspect to assess at a
+										case by case basis as to reduce the impact on our Mimi's key
+										trait of broad appeal and its most fragile asset.
+									</p>
+									<p>
+										In terms of hardware the casing would be majority of "
+										Acrylonitrile butadiene styrene, more commonly known as ABS
+										plastic. It is relatively inexpensive and lightweight, with a
+										density of 1.08 grams per cubic centimetre" for sustained
+										durability and cost efficiency which in itself brings a
+										cooling risk based on ambient temperature and runtime. The
+										manor of power implementation will vary the way in which we
+										will have the batteries or power cable be connected and
+										protected which we would require an airtight seal or case
+										cover on the exterior to make the product more waterproof.
+										Although, that would raise the risk for temperature and device
+										handling limitations and should have terms and conditions to
+										the situation where hardware or software insufficiency are in
+										the fault of design, manufacture or user actions and would be
+										assessed through testing. It may require fail safe measures
+										like seen in the original Xbox 360's red ring of death which
+										displayed the type of fault and severity of damage by the
+										number and placement of red bars in the ring. Something like
+										this for various functional issues would reduce risk to
+										company image and allow us to offer repair or a supplementary
+										service in return for product fault on our behalf, delicate
+										implementation of insurance cover and user warranty to
+										compensate for inevitable faults at any level of production or
+										consumer use.
+									</p>
+
+									<section>
+										<h4 class="major">References</h4>
+										<ul class="references-list">
+											<li>
+												[1] <b>Energy Rating.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Video Game Consoles [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.energyrating.gov.au/products/video-game-consoles">
+													&lt;https://www.energyrating.gov.au/products/video-game-consoles&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 16 November 2020].
+											</li>
+											<li>
+												[2] <b>SIL International.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Language Variation. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.sil.org/language-assessment/language-variation">
+													&lt;https://www.sil.org/language-assessment/language-variation&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 16 November 2020].
+											</li>
+											<li>
+												[3] <b>Guide, T.</b>, 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Gadget Materials Guide: Aluminum Vs Carbon Fiber, Plastic And Glass. [online] Tom's Guide.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.tomsguide.com/us/gadget-materials-guide,news-22743.html">
+													&lt;https://www.tomsguide.com/us/gadget-materials-guide,news-22743.html&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 16 November 2020].
+											</li>
+											<li>
+												[4] <b>Business Insider.</b> 2020.
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												How Microsoft Spent $1 Billion On A Simple Mistake With Its Best Game Console. [online]
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												Available at:
+												<a target="_blank" href="https://www.businessinsider.com/red-ring-of-death-recall-2016-4">
+													&lt;https://www.businessinsider.com/red-ring-of-death-recall-2016-4&gt;</a>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												[Accessed 16 November 2020].
+											</li>
+										</ul>
+									</section>
+
+
+
+									<h3 class="major">Group Processes and Communications</h3>
+
 								</section>
-
-								<h2 class="major">Testing</h3>
-								<p>
-									From Multiple aspects it would be difficult to declare when
-									the Mimi box is a finished product as many innovations could
-									be made in series of updates or version releases. And that
-									would propose various expansions upon the available game modes
-									& or similar variations of the way the player must mimic their
-									opponent such as facial expressions,
-								</p>
-								<p>
-									In the case for the basis of a prototype the first version of
-									the Mimi box that would be considered a final product, this
-									would most likely entail the base primes of having players be
-									capable of comparing their voice recording to set a
-									score-based system this would be the most accurate
-									demonstration of the product the Meme Team intends.
-								</p>
-								<p>
-									Yet due to time confinements, having a real-world design and
-									functional program would be the most feasible. Below are
-									examples such as 3D Model, code examples toward what a
-									functional version of our device would require as well as
-									example audio output from the product.
-								</p>
-								<p>
-									Furthermore, there are multiple aspects that would benefit
-									from quality assurance. The most prevalent to mind is the
-									accuracy of compared matrix of the recorded MEL frequencies
-									which would directly determine the scale and skill ceiling,
-									this is only trial and error as the game must be within a
-									degree of accuracy that isn't so low the game requires no
-									skill and on the opposite end not too accurate as to be
-									unplayable. This would also include quality assuring the
-									physical durability of the hardware encasement to upfront
-									deliver to our target audience which would require a broad
-									demographic with diverse dialect to ensure that language
-									variants of the product are quality assured.
-								</p>
-								<p>
-									This would include most if not all available nationality's to
-									test as well as any age groups as vocal intonation varies due
-									to puberty as well “Linguistic variation, Sociolinguistic
-									Variation, Dialectal Variation and Linguistic Variables”<a
-									href="#testing_1"><sup>[1]</sup></a> which comes back to the
-									IPA<a href="#testing_2"><sup>[2]</sup></a> (International
-									phonetic alphabet) and regional to language variation which
-									would be an example of how our Mimi box fulfils its role as a
-									versatile in-home entertainment device.
-								</p>
-
-								<section>
-									<h4 class="major">References</h4>
-									<ul class="references-list">
-										<li>
-											<a id="testing_1" class="anchor"></a>
-											[1] <b>ThoughtCo.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											What Is Linguistic Variation?. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.thoughtco.com/what-is-linguistic-variation-1691242#:~:text=Dialectal%20Variation,difference%20is%20one%20of%20accent.">
-											&lt;https://www.thoughtco.com/what-is-linguistic-variation-1691242#:~:text=Dialectal%20Variation,difference%20is%20one%20of%20accent.&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 11 November 2020].
-										</li>
-										<li>
-											<a id="testing_2" class="anchor"></a>
-											[2] <b>Internationalphoneticassociation.org.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Full IPA Chart | International Phonetic Association. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.internationalphoneticassociation.org/content/full-ipa-chart">
-											&lt;https://www.internationalphoneticassociation.org/content/full-ipa-chart&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 11 November 2020].
-										</li>
-									</ul>
-								</section>
-
-								<h2 class="major">Timeframe</h3>
-
-								<h2 class="major">Risks</h3>
-								<p>
-									Development of the Mimi box as an idea was more complex than
-									originally thought as considering the manor of implementation
-									to basic components such as power source and code format where
-									reconsidered through the process.
-								</p>
-								<p>
-									A primary concern of the entertainment device is the power
-									consumption and therefore resulting game play time with our
-									prototype this issue arose in which multiple options are
-									viable but "All products covered by energy efficiency
-									regulations must meet certain requirements before they can be
-									supplied or sold in Australia or New Zealand.". This makes it
-									so we must comply to a standard of modern efficiency prior to
-									convenience which could dramatically impact the product output
-									if prototype power consumption relative to final product power
-									usage differ significantly.
-								</p>
-								<p>
-									Furthermore, the software as it is currently is recording
-									inputs from raw Hz into .Wav files, which can be seen in the
-									project testing section, is a great step in the correct
-									direction. Beyond this, comparing the files and having a
-									score-based system set around said comparisons to be the end
-									goal as a functioning game mode which may be easier with
-									Python, rather than java, the latter being the one the team
-									has chosen for the prototyping phase which could cause minor
-									disparagement in how code will function in the final product.
-									It is a delicate risk due to the amount of variation the game
-									itself must entail to be a global product that will need
-									vigorous quality assurance for various dialects which could be
-									problematic due to production time constraints, again leading
-									toward an unfavourable unit quality on launch simply due to
-									the large amount of variation that "differences between the
-									speech of men and women, different social classes, and
-									differences between age groups.
-								</p>
-								<p>
-									People will identify some of these features as marking the
-									"best" or most "beautiful" form of the language, other
-									features will be considered nonstandard or undesirable", a
-									consideration that would have to be taken by region as the
-									product is sound orientated and the inherent functional
-									quality as well as sale output  This would be riskily
-									undertaken the less testing given a particular language or
-									dialect variation and a considerable aspect to assess at a
-									case by case basis as to reduce the impact on our Mimi's key
-									trait of broad appeal and its most fragile asset.
-								</p>
-								<p>
-									In terms of hardware the casing would be majority of "
-									Acrylonitrile butadiene styrene, more commonly known as ABS
-									plastic. It is relatively inexpensive and lightweight, with a
-									density of 1.08 grams per cubic centimetre" for sustained
-									durability and cost efficiency which in itself brings a
-									cooling risk based on ambient temperature and runtime. The
-									manor of power implementation will vary the way in which we
-									will have the batteries or power cable be connected and
-									protected which we would require an airtight seal or case
-									cover on the exterior to make the product more waterproof.
-									Although, that would raise the risk for temperature and device
-									handling limitations and should have terms and conditions to
-									the situation where hardware or software insufficiency are in
-									the fault of design, manufacture or user actions and would be
-									assessed through testing. It may require fail safe measures
-									like seen in the original Xbox 360's red ring of death which
-									displayed the type of fault and severity of damage by the
-									number and placement of red bars in the ring. Something like
-									this for various functional issues would reduce risk to
-									company image and allow us to offer repair or a supplementary
-									service in return for product fault on our behalf, delicate
-									implementation of insurance cover and user warranty to
-									compensate for inevitable faults at any level of production or
-									consumer use.
-								</p>
-
-								<section>
-									<h4 class="major">References</h4>
-									<ul class="references-list">
-										<li>
-											[1] <b>Energy Rating.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Video Game Consoles [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.energyrating.gov.au/products/video-game-consoles">
-												&lt;https://www.energyrating.gov.au/products/video-game-consoles&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 16 November 2020].
-										</li>
-										<li>
-											[2] <b>SIL International.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Language Variation. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.sil.org/language-assessment/language-variation">
-												&lt;https://www.sil.org/language-assessment/language-variation&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 16 November 2020].
-										</li>
-										<li>
-											[3] <b>Guide, T.</b>, 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Gadget Materials Guide: Aluminum Vs Carbon Fiber, Plastic And Glass. [online] Tom's Guide.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.tomsguide.com/us/gadget-materials-guide,news-22743.html">
-												&lt;https://www.tomsguide.com/us/gadget-materials-guide,news-22743.html&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 16 November 2020].
-										</li>
-										<li>
-											[4] <b>Business Insider.</b> 2020.
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											How Microsoft Spent $1 Billion On A Simple Mistake With Its Best Game Console. [online]
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Available at:
-											<a target="_blank" href="https://www.businessinsider.com/red-ring-of-death-recall-2016-4">
-												&lt;https://www.businessinsider.com/red-ring-of-death-recall-2016-4&gt;</a>
-											<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											[Accessed 16 November 2020].
-										</li>
-									</ul>
-								</section>
-
-
-
-								<h2 class="major">Group Processes and Communications</h3>
 
 							</div>
 						</div>
