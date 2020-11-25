@@ -323,3 +323,23 @@ a.anchor {
   margin-right: auto;
   width: 50%;
 }
+
+.features article.wide .image {
+  border-radius: 5px 5px 0 0;
+  display: inline-block;
+  margin-bottom: 1.75em;
+  margin-left: -1.75em;
+  margin-top: -1.75em;
+  position: relative;
+  width: calc(100% + 3.5em);
+}
+
+  .features article.wide .image {
+    border-radius: 5px 5px 5px 5px;
+    width: 50%;
+    max-width: 50%;
+  }
+
+.personal-info {
+  list-style-type: none;
+}

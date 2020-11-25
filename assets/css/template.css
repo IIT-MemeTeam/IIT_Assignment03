@@ -3015,11 +3015,15 @@ input, select, textarea {
 			width: calc(50% - 1.5em);
 		}
 
-			.features article:nth-child(2n) {
+			.features article.wide {
+				width: calc(100% - 1.5em);
+			}
+
+			.features article:not([.wide]):nth-child(2n) {
 				margin-right: 0;
 			}
 
-			.features article .image {
+			.features article .image:not([.wide]) {
 				border-radius: 5px 5px 0 0;
 				display: block;
 				margin-bottom: 1.75em;
@@ -3029,7 +3033,7 @@ input, select, textarea {
 				width: calc(100% + 3.5em);
 			}
 
-				.features article .image img {
+				.features article .image img:not([.wide]) {
 					border-radius: 5px 5px 0 0;
 					width: 100%;
 				}
