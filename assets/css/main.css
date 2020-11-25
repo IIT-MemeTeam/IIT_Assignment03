@@ -329,7 +329,7 @@ a.anchor {
   display: inline-block;
   margin-bottom: 1.75em;
   margin-left: -1.75em;
-  margin-top: -1.75em;
+  margin-top: -2em;
   position: relative;
   width: calc(100% + 3.5em);
 }
