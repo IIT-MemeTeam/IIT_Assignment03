@@ -1,46 +1,212 @@
 <!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-    <link rel="stylesheet" href="assets/audioPlayer/audioPlayer.css" />
+		<title>Tools</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/template.css" />
+		<link rel="stylesheet" href="assets/audioPlayer/audioPlayer.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/audioPlayer/audioPlayer.js"></script>
-</head>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<body>
-<div class="container">
-    <div class="column center">
-        <h1>HTML5 Audio Player</h1>
-        <h6>w/ responsive playlist</h6>
-    </div>
-    <div class="column add-bottom">
-        <div id="mainwrap">
-            <div id="nowPlay">
-                <span class="left" id="npAction">Paused...</span>
-                <span class="right" id="npTitle"></span>
-            </div>
-            <div id="audiowrap">
-                <div id="audio0">
-									<!-- TODO: Insert youtube link to audio -->
-                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
-                </div>
-                <div id="tracks">
-                    <a id="btnPrev">&laquo;</a>
-                    <a id="btnNext">&raquo;</a>
-                </div>
-            </div>
-            <div id="plwrap">
-                <ul id="plList">
-									<script>loadTrackList("plList");</script>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="column add-bottom center">
-        <!-- <p>Created by <a href="http://www.markhillard.com/">mh</a>. Music by <a href="http://www.mythium.net/">Mythium</a>.</p> -->
-        <!-- <p>Download: <a href="https://archive.org/download/mythium/mythium_vbr_mp3.zip">zip</a> / <a href="https://archive.org/download/mythium/mythium_archive.torrent">torrent</a></p> -->
-    </div>
-</div>
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Meme Team</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-</body>
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="profiles.html">Team</a></li>
+								<li><a href="project_plan.html">Project Plan</a></li>
+								<li><a href="skills_jobs.html">Skills & Jobs</a></li>
+								<li><a href="tools.html">Tools</a></li>
+								<li><a href="reflections.html">Reflections</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Tools</h2>
+								<p>The tools used for project colloboration.</p>
+							</div>
+						</header>
+
+				<!-- Content -->
+					<div class="wrapper">
+						<div class="inner">
+
+							<h3 class="major">Scope and Limits</h3>
+
+							<p>
+								The scope of the project is relative to the considered
+								finalization stage based off time restraints given as well
+								individual commitments that may impede progress of the final
+								outcome. Given the current assignment deadline as it stands,
+								we have a prototype of our entertainment system that presents
+								the functionality of recording raw audio inputs and said input
+								recorded logged as an actively saved sound file. Along with
+								this is a 3rd dimensional digital visual representation as
+								designs for the product, as well place holder for a voice over
+								for the game.
+							</p>
+							<p>
+								As the scope for a whole development cycle is unfeasible give
+								our current restrictions it would be appropriate to assume
+								that the game loop the system requires for basic function may
+								not be presentable and delivered in segments as
+								aforementioned.
+							</p>
+
+							<div class="audioPlayer features right">
+									<article class="column add-bottom wide">
+											<div id="mainwrap">
+													<div id="nowPlay">
+															<span class="left" id="npAction">Paused...</span>
+															<span class="right" id="npTitle"></span>
+													</div>
+													<div id="audiowrap">
+															<div id="audio0" class="cente">
+																<!-- TODO: Insert youtube link to audio -->
+																	<audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+															</div>
+															<div id="tracks">
+																	<Button href="#" id="btnPrev" class="button icon solid media-prev"></Button>
+																	<Button href="#" id="btnNext" class="button icon solid media-next"></Button>
+															</div>
+															<div id="trackCount">Track Count: </div>
+													</div>
+													<div id="plwrap" class="table-wrapper">
+
+															<table id="plList">
+
+															</table>
+													</div>
+											</div>
+									</article>
+							</div>
+
+							<p>
+								These would pertain to the basic game functions such as taking
+								the audio and saving it as a file but will not be yet able to
+								compare these audio files accurately or to an acquitted
+								standard of function that a final output would need, as well
+								as deliverable or a real-world demonstration of our final
+								product would be un-producible. Although, many examples of
+								code and hardware needed to function have been explored by
+								multiple members of the Meme Team with drawn and computer
+								drawn designs as well as working on a Raspberry Pi that is
+								recording audio input which can be seen in the protect
+								testing. Extensive research has also been put towards the
+								absent necessity through the subset tasks proposed by the Mimi
+								Box although this achievement may be unobtainable due to the
+								hypothetical global appeal of the device and vigorous testing
+								that is implied by a global scale production line that is also
+								mentioned in the testing section, an example that could be
+								given upon the long term that would not happen without backing
+								from a company or entrepreneur.
+							</p>
+							<p>
+								As the game is sound based it wouldn't be illogical to draw
+								comparison towards Sony Entertainments Sing-Star<a
+								href="#scope_1"><sup>[1]</sup></a> in which you try to imitate
+								famous singers in iconic songs and although on January 31,
+								2020 the company shut down, the proportions of the company
+								speak for themselves and in the case of long-term development
+								would see them as a milestone competitor "Sing-Star series has
+								now sold over 20 million units, Sony has announced....
+								confirmed 16 million units had been sold across PAL regions
+								alone"<a href="#scope_2"><sup>[2]</a>. This connects back to
+								the global variation required by the testing and a final
+								production line and would be considered way beyond the scope
+								of current circumstances.
+							</p>
+
+							<section>
+								<h4 class="major">References</h4>
+								<ul class="references-list">
+									<li>
+										<a id="scope_1" class="anchor"></a>
+										[1] <b>Playstation.</b> 2020.
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										Singstar Celebration. [online]
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										Available at:
+										<a target="_blank" href="https://www.playstation.com/en-au/games/singstar-celebration-ps4">
+										&lt;https://www.playstation.com/en-au/games/singstar-celebration-ps4/&gt;</a>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										[Accessed 20 November 2020].
+									</li>
+									<li>
+										<a id="scope_2" class="anchor"></a>
+										[2] <b>GamesIndustry.biz.</b> 2020.
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										Singstar Reaches 20 Million Sales. [online]
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										Available at:
+										<a target="_blank" href="https://www.gamesindustry.biz/articles/singstar-reaches-20-million-sales">
+										&lt;https://www.gamesindustry.biz/articles/singstar-reaches-20-million-sales&gt;</a>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										[Accessed 20 November 2020].
+									</li>
+								</ul>
+							</section>
+
+
+
+						</div>
+					</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Meme Team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/template.js"></script>
+			<script src="assets/audioPlayer/audioPlayer.js"></script>
+			<script>loadTrackList("plList");</script>
+
+	</body>
 </html>

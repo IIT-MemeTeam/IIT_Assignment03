@@ -425,31 +425,41 @@ tracks = [{
 
 function loadTrackList(htmlParent) {
   listParent = document.getElementById(htmlParent);
+  tdbody = document.createElement("tbody");
+  // tdbody.className = "table-wrapper";
 
   for (i = 0; i < tracks.length; i++) {
     li = document.createElement("li");
     plItem = document.createElement("div");
     plItem.className = "plItem";
 
-    plNum = document.createElement("div");
+    plNum = document.createElement("td");
     plNum.className = "plNum";
     plNum.innerHTML = tracks[i].track + ".";
 
-    plTitle = document.createElement("div");
+    plTitle = document.createElement("td");
     plTitle.className = "plTitle";
     plTitle.innerHTML = tracks[i].name;
 
-    plLength = document.createElement("div");
+    plLength = document.createElement("td");
     plLength.className = "plLength";
     plLength.innerHTML = tracks[i].length;
 
-    plItem.appendChild(plNum);
-    plItem.appendChild(plTitle);
-    plItem.appendChild(plLength);
+    tr = document.createElement("tr");
 
-    li.appendChild(plItem);
-    listParent.appendChild(li);
+    tr.appendChild(plNum);
+    tr.appendChild(plTitle);
+    tr.appendChild(plLength);
+
+    tdbody.appendChild(tr);
   }
+  listParent.appendChild(tdbody);
+
+  setTrackCount("trackCount");
+}
+
+function setTrackCount(trackCount) {
+  document.getElementById(trackCount).innerHTML += tracks.length;
 }
 
 // HTML5 audio player + playlist controls...
@@ -473,15 +483,16 @@ jQuery(function ($) {
             npAction.text('Paused...');
         }).bind('ended', function () {
             npAction.text('Paused...');
-            if ((index + 1) < trackCount) {
-                index++;
-                loadTrack(index);
-                audio.play();
-            } else {
-                audio.pause();
-                index = 0;
-                loadTrack(index);
-            }
+            // if ((index + 1) < trackCount) {
+            //     index++;
+            //     loadTrack(index);
+            //     audio.play();
+            // } else {
+            //     audio.pause();
+            //     index = 0;
+            //     loadTrack(index);
+            // }
+            audio.pause();
         }).get(0),
         btnPrev = $('#btnPrev').click(function () {
             if ((index - 1) > -1) {
@@ -509,17 +520,17 @@ jQuery(function ($) {
                 loadTrack(index);
             }
         }),
-        li = $('#plList li').click(function () {
-            var id = parseInt($(this).index()) - 1;
+        tr = $('#plList tr').click(function () {
+            var id = parseInt($(this).index());
             // console.log("selected track " + id);
-            if (id !== index) {
+            // if (id !== index) {
                 playTrack(id);
-            }
+            // }
         }),
         loadTrack = function (id) {
           // console.log("Loading track " + id);
             $('.plSel').removeClass('plSel');
-            $('#plList li:eq(' + id + ')').addClass('plSel');
+            $('#plList tr:eq(' + id + ')').addClass('plSel');
             npTitle.text(tracks[id].name);
             index = id;
             audio.src = mediaPath + tracks[id].file + extension;
