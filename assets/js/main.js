@@ -26,7 +26,6 @@ function openModal(image) {
 }
 
 function openTextModal(modal) {
-  console.log("Opening " + modal);
   document.getElementById(modal).classList.add("active");// = "block";
   height = document.body.style.height;
   overflow = document.body.style.overflow;
