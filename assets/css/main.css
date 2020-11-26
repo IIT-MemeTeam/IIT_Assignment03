@@ -343,3 +343,12 @@ a.anchor {
 .personal-info {
   list-style-type: none;
 }
+/* 
+video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+} */
