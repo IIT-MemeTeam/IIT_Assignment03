@@ -53,7 +53,10 @@ padding:0;
 vertical-align:baseline;
 } */
 
-.audioPlayer { line-height:1; }
+.audioPlayer {
+  line-height:1;
+  max-width: 700px
+}
 /* ul { list-style:none; } */
 
 
@@ -98,7 +101,6 @@ color:#C8C7C8; */
 
 .audioPlayer.right {
   padding-left: 30px !important;
-
 }
 
 /* Custom Styles
