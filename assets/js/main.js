@@ -1,13 +1,36 @@
+var height = document.body.style.height;
+var overflow = document.body.style.overflow;
+
 function closeSingleModal() {
   document.getElementById("singleModal").classList.remove("active");// = "none";
+
+  // const scrollY = document.body.style.top;
+  // document.body.style.position = '';
+  // document.body.style.top = '';
+  // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+  document.body.style.height = height;
+  document.body.style.overflow = overflow;
 }
 
 function openModal(image) {
   var modalImg = document.getElementById("imgContent");
   var captionText = document.getElementById("modalCaption");
   document.getElementById("singleModal").classList.add("active");// = "block";
-  modalImg.src = image.src;
-  captionText.innerHTML = image.alt;
+  //modalImg.src = image.src;
+  //captionText.innerHTML = image.alt;
+
+  // document.body.style.position = 'fixed';
+
+  height = document.body.style.height;
+  overflow = document.body.style.overflow;
+
+  document.body.style.height = '100%';
+  document.body.style.overflow = "hidden";
+  // document.body.style.top = `-${window.scrollY}px`;
+
+  // height: 100%;
+  //  overflow-y: hidden;
 }
 
 function openMultiModal(modal) {

@@ -359,6 +359,30 @@ a.anchor {
 .personal-info {
   list-style-type: none;
 }
+
+.script-example .person {
+  color: lightblue;
+}
+
+.script-example .box-action {
+  color: red !important;
+}
+
+.script-example h1,
+.script-example h2,
+.script-example h3,
+.script-example h4,
+.script-example h5 {
+  font-weight: 200;
+  margin: 0 0 0 0;
+  letter-spacing: normal;
+  /* line-height: normal; */
+  font-size: 0.9em;
+}
+
+.script-example p {
+  font-size: 0.9em;
+}
 /*
 video {
     position: absolute;
