@@ -158,7 +158,7 @@ audio { width:100%;  margin:auto;}
 #plList tr:hover {
   background-color:#262223;
 }
-#trackCount {text-align: right; padding-right: 10px; padding-bottom: 5px; font-size: 16px;}
+#trackCount {text-align: right; padding-right: 10px; padding-bottom: 5px; font-size: 16px; padding-top: 10px;}
 .plItem { position:relative; }
 .plTitle { left:50px; overflow:hidden;  right:65px; text-overflow:ellipsis; top:0; white-space:nowrap; }
 .plNum { padding-left:21px; width:25px; }
