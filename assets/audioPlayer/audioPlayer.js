@@ -467,6 +467,18 @@ function setTrackCount(trackCount) {
 jQuery(function ($) {
     var supportsAudio = !! document.createElement('audio').canPlayType;
     if (supportsAudio) {
+      var player = new Plyr('#audio1', {
+    controls: [
+        'restart',
+        'play',
+        'progress',
+        'current-time',
+        'duration',
+        'mute',
+        'volume',
+        'download'
+    ]
+});
         var index = 0,
             playing = false;
         mediaPath = './example audio script/',
