@@ -224,6 +224,7 @@ margin-left:7px;
   padding: 0 2.25em;
   /* white-space: normal; */
   max-height: 50px;
+  width: 50%;
 }
 
 .audioPlayer a#btnPrev {
