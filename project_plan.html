@@ -12,6 +12,8 @@
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/template.css" />
+		<link rel="stylesheet" href="assets/audioPlayer/audioPlayer.css" />
+		<link rel="stylesheet" href="assets/css/modelViewer.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -61,6 +63,169 @@
 									<span class="modalClose" onclick="closeSingleModal()">&times;</span>
 									<img class="modal-content" id="imgContent">
 									<div id="modalCaption"></div>
+								</div>
+
+								<div id="script-example-modal" class="textModal">
+									<span class="modalClose" onclick="closeTextModal('script-example-modal')">&times;</span>
+									<div class="modal-content" id="txtContent">
+										<div class="script-example">
+											<h4 class="box-action">Button press: Power</h4>
+
+											<h5>Mimi-box:</h5>
+
+											<p>“Hi everyone! I’m going to ask you what your names are, press and hold the speak button to record your name, Ill say your name back to you, then press Up if you’re happy with the results! This will let the next player enter their name. when you’re finished, press skip twice.
+												<br><br>
+												So, tell me, what are your names?”</p>
+
+											<h5 class="box-action">Button press and hold: Speak</h5>
+
+											<h4>Player 1(Leo):</h4>
+
+											<p>“<span class="person">Leo</span>”</p>
+
+											<h5 class="box-action">Button press: Up</h5>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“Nice to have you <span class="person">Leo</span><br>what is your name?”</p>
+
+											<h5 class="box-action">Button press and hold: Speak</h5>
+
+											<h4>Player 2(Brent):</h4>
+
+											<p>“<span class="person">Brent</span>”</p>
+
+											<h5 class="box-action">Button press: Up</h5>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“Yes! <span class="person">Brent</span> is playing</p>
+
+											<p>what is your name?”</p>
+
+											<h5 class="box-action">Button press and hold: Speak</h5>
+
+											<h4>Player 2(Michael):</h4>
+
+											<p>“<span class="person">Michael</span>”</p>
+
+											<h5 class="box-action">Button press: Up</h5>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“<span class="person">Michael</span> is here to have fun</p>
+
+											<p>what is your name?”</p>
+
+											<h5 class="box-action">Button press and hold: Speak</h5>
+
+											<h4>Player 2(Thomas):</h4>
+
+											<p>“<span class="person">Thomas</span>”</p>
+
+											<h5 class="box-action">Button press: Up</h5>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“the myth, the legend, it’s <span class="person">Thomas</span></p>
+
+											<p>what is your name?”</p>
+
+											<h5 class="box-action">Button press and hold: Speak</h5>
+
+											<h4>Player 2(Steven):</h4>
+
+											<p>“<span class="person">Steven</span>”</p>
+
+											<h5 class="box-action">Button press: Skip x2</h5>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“Hello <span class="person">Steven</span>, I‘m box”</p>
+
+											<p>“Great! Let’s pick a game mode!”</p>
+
+											<p>“Welcome everyone to Mimi-box, if you know the instructions, press skip!</p>
+											<p>This is the part where you choose the game mode! After listening to my instructions, press up and down to change the game mode, then press the speak button to decide.”</p>
+
+											<p>“Normal Mode – In this mode, I ask you to talk, you can say anything you want! then, I will choose someone else to copy you, by mimicking your voice, sound, song, or any random noise that you made!, so try to Mimic each other as closely as you can! And if you’re not close enough, you’ll lose this round!”</p>
+
+											<h5 class="box-action">Button press: Speak</h5>
+
+											<h4>Mimi-Box: (chooses a name)</h4>
+
+											<p>“<span class="person">Steven</span> I’m choosing you”</p>
+
+											<h5 class="box-action">Button press: Speak (10 second)</h5>
+
+											<h4>Steven: (example, speaking really slowly)</h4>
+
+											<p>“<span class="person">Who lives in a pineapple under the sea</span>”</p>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“And <span class="person">Lochlann</span> I think you should mimic <span class="person">Steven</span>”</p>
+
+											<h5 class="box-action">Countdown to recording:</h5>
+
+											<p>Lochlann: (speaking really slowly to imitate Steven)</p>
+
+											<p>“<span class="person">Who lives in a pineapple under the sea</span>”</p>
+
+											<h4>Mimi-box: m: 1</h4>
+
+											<p>“Congratulations <span class="person">Lochlann</span>, you done well!”</p>
+
+											<h4>Mimi-Box: (chooses a name)</h4>
+
+											<p>“<span class="person">Brent</span>, press the speak button to record your mimic”</p>
+
+											<h5 class="box-action">Button press: Speak (10 second)</h5>
+
+											<h4>Brent: (example)</h4>
+
+											<p>“<span class="person">I really like to get married</span>”</p>
+											<h4>Mimi-box:</h4>
+
+											<p>“<span class="person">Thomas</span> it’s time for you to mimic Brent, are you ready?”</p>
+
+											<h5 class="box-action">Countdown to recording:</h5>
+
+											<h4>Thomas: (example, some audible laughing which will disturb the comparison)</h4>
+
+											<p>“<span class="person">I really like to get married</span>”</p>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“<span class="person">Thomas</span>, you lost this round”</p>
+
+											<h5>Mimi-box:</h5>
+
+											<p>“<span class="person">Michael</span>, it’s your turn”</p>
+
+											<h5 class="box-action">Button press: Speak (10 second)</h5>
+
+											<h4>Michael: (speaking grumpy)</h4>
+
+											<p>“<span class="person">I’m not grumpy</span>”</p>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“and <span class="person">Leo</span>, I think you should mimic <span class="person">Michael</span>”</p>
+
+											<h5 class="box-action">Countdown to recording:</h5>
+											<h4>Leo: (laughing too much)</h4>
+
+											<p>“<span class="person">that’s too impossible man</span>”</p>
+
+											<h4>Mimi-box:</h4>
+
+											<p>“<span class="person">Leo</span>, you have been eliminated”</p>
+
+											<p>Etc...</p>
+										</div>
+									</div>
+									<!-- <div id="modalCaption"></div> -->
 								</div>
 
 								<section>
@@ -313,6 +478,11 @@
 										inputs on cords are used for Mimi-box user functionality.
 									</p>
 
+									<figure class="right" style="width:30%; padding-left:30px; padding-bottom:20px;">
+										<img class="modalImg image fit" onclick="openModal(this);" style="margin-bottom:0; max-width:100%;" src="./assets/3DModel/poster.png" alt="3D render of the Mimi Box"></img>
+										<figcaption class="" style="font-size:15px; text-align:center;">3D render of the Mimi Box</figcaption>
+									</figure>
+
 									<h4>
 										Script & Voice Recording for interactions between the
 										Mimi-box and the players
@@ -439,8 +609,29 @@
 										practical in this sense.
 									</p>
 
-									<!-- TODO: add 3D model -->
+									<!-- TODO: activate 3D model -->
+									<figure>
+									<model-viewer style="width:100%; height:600px;" src="./assets/3DModel/Mimi box.glb" reveal="interaction" camera-controls exposure="0.83" shadow-intensity="0" shadow-softness="0.61" camera-orbit="-270.6deg 64.02deg 35.73m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 35.73m">
 
+											<div id="lazy-load-poster" slot="poster"></div>
+											<div id="button-load" slot="poster">Load 3D Model</div>
+
+											<div class="Hotspot" slot="hotspot-2" data-position="-3.0781543243582963m 1.337537103174899m 0.6820668767130568m" data-normal="0m 1m 0m" data-visibility-attribute="visible" onclick="onHotSpotClicked(this)">
+													<div visible class="HotspotAnnotation">Speaker</div>
+											</div>
+											<div class="Hotspot" slot="hotspot-3" data-position="-9.732485380788823m -14.485052254486067m 1.4646939285330887m" data-normal="-0.9999997448427407m -0.0007138029362260678m 0.000028281121762835636m" data-visibility-attribute="visible" onclick="onHotSpotClicked(this)">
+													<div visible class="HotspotAnnotation">USBC Charging port</div>
+											</div>
+											<div class="Hotspot" slot="hotspot-4" data-position="2.9867221276054483m -0.3820029999776864m -3.2707882430543496m" data-normal="0.7003711062617347m -0.010225630968510471m -0.7137056465973979m" data-visibility-attribute="visible" onclick="onHotSpotClicked(this)">
+													<div visible class="HotspotAnnotation">Power Button</div>
+											</div>
+											<div class="Hotspot" slot="hotspot-5" data-position="2.4034032338807627m 0.23576681019808365m 0.7328605273029206m" data-normal="0.7745438282437909m 0.6325202432566511m 0m" data-visibility-attribute="visible" onclick="onHotSpotClicked(this)">
+													<div visible class="HotspotAnnotation">Controls</div>
+											</div>
+									</model-viewer>
+									<figcaption style="font-size:15px; text-align:center;">3D Model of the Mimi Box created in Blender | <a href="./assets/3DModel/Mimi box.blend">Blender file</a></figcaption>
+									<figure>
+									<br>
 									<p>
 										Over the course of Assignment 3, we steadily created a 3d
 										model of the Mimi-Box on Blender, which is a free and
@@ -462,6 +653,12 @@
 										design and adjust the design to our liking. Such as adding
 										LED lights, buttons, a speaker, and a USB-C port.
 									</p>
+
+									<figure class="right" style="width:40%; padding-left:30px; padding-bottom:20px;">
+										<img class="modalImg image fit" onclick="openModal(this);" style="margin-bottom:0; max-width:100%;" src="./images/project/Storyboard.png" alt="Storyboard (Drawn by Thomas Lewis)"></img>
+										<figcaption class="" style="font-size:15px; text-align:center;">Storyboard (Drawn by Thomas Lewis)</figcaption>
+									</figure>
+
 									<p>
 										As a part of Assignment 5, we created a written script to
 										advertise our end-product. To do this, a storyboard of
@@ -486,6 +683,18 @@
 										created, team member Lochlann utilised his three housemates,
 										including himself, to film these scenes.
 									</p>
+
+									<div class="center" width="560" height="340" style="width:50%; height:50%; padding-left:15px; padding-bottom:10px;">
+										<figure>
+											<iframe class="center" width="560" height="315" style="max-width=560; max-height=315" src="https://www.youtube-nocookie.com/embed/tpZ3bAIep-M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+											<br>
+											<figcaption style="font-size:15px; text-align:center; width=50%;">Mimi Box advertisement (previously submitted as part of the Meme Teams Assignment 5)</figcaption>
+										</figure>
+									</div>
+
+									<br>
+
 									<p>
 										All these physical artifacts created throughout Assignment
 										3, lay the foundations of a design principle with practical
@@ -544,8 +753,11 @@
 										change as the Mimi-Box takes shape.
 									</p>
 
-									<!-- TODO: Add image -->
-
+									<figure class="">
+										<img class="modalImg image fit center" onclick="openModal(this);" style="margin-bottom:0;" src="images/project/TeamMeetByteArray.png" alt="Meeting: published on 11/5/20 by Steven Holman - Audio input converted into array of bytes"></img>
+										<figcaption class="" style="font-size:15px; text-align:center;">Meeting: published on 11/5/20 by Steven Holman - Audio input converted into array of bytes</figcaption>
+									</figure>
+									<br>
 									<p>
 										During the early stages of development, it was essential to
 										build the core game concept. We needed to know for sure the
@@ -566,7 +778,16 @@
 										comma-separated values.
 									</p>
 
-									<!-- TODO: Add video of code -->
+									<div class="right" width="1286" height="794" style="width:50%; height:50%; padding-left:15px; padding-bottom:10px;">
+										<figure>
+											<video class="" style="max-width:100%;" controls preload="auto">
+												<source src="app.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+											</video>
+											<br>
+											<figcaption style="font-size:15px; text-align:center; width=50%;">Proof of Concept code running | <a href="https://youtu.be/LhvC-ehKws4">YouTube link</a> - <a href="https://github.com/IIT-MemeTeam/Mimibox-prototype">GitHub Repository</a></figcaption>
+										</figure>
+									</div>
 
 									<p>
 										The decision was made to put less work into refining the
@@ -667,7 +888,36 @@
 										place in the storyboard.
 									</p>
 
-									<!-- TODO: Add audio clips here -->
+									<div class="container audioPlayer features right">
+											<article class="wide center">
+													<div id="mainwrap">
+															<div id="nowPlay">
+																	<span class="left" id="npAction">Paused...</span>
+																	<span class="right" id="npTitle"></span>
+															</div>
+															<div id="audiowrap">
+																	<div id="audio0" class="cente">
+																		<!-- TODO: Insert youtube link to audio -->
+																			<audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+																	</div>
+																	<div id="tracks">
+																			<a id="btnPrev" class="button icon solid media-prev"></a>
+																			<a id="btnNext" class="button icon solid media-next"></a>
+																	</div>
+																	<div id="trackCount">Track Count: </div>
+															</div>
+															<div id="plwrap" class="table-wrapper">
+
+																	<table id="plList">
+
+																	</table>
+															</div>
+													</div>
+													<button class="button primary fit" onclick="openTextModal('script-example-modal');">Show Example Script</button>
+													<br><br>
+											</article>
+
+									</div>
 
 									<p>
 										A finer feature of the Mimi-Box object planned within this
@@ -1068,7 +1318,7 @@
 									</p>
 									<p>
 										Yet, having a real-world design and functional program would
-										be the most feasible due to time confinements. Below are
+										be the most feasible due to time confinements. Earlier (In plans and progress) there were
 										examples such as the 3D Model, code examples toward what a
 										functional version of our device would require, and example
 										audio output from the product.
@@ -1335,6 +1585,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/template.js"></script>
+			<script src="assets/audioPlayer/audioPlayer.js"></script>
+			<script src="assets/js/modelViewer.js"></script> -->
+			<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+			<script>loadTrackList("plList");</script>
 
 	</body>
 </html>
