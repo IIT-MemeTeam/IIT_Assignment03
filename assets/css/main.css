@@ -347,6 +347,10 @@ a.anchor {
     visibility: hidden;
 }
 
+body .inner {
+  width: 57em !important;
+}
+
 #footer .inner .sources {
   border-left: solid 2px rgba(255, 255, 255, 0.125);
   color: rgba(255, 255, 255, 0.35);
@@ -458,12 +462,9 @@ a.anchor {
   /* border: 1px solid black; */
   text-align: center;
 }
-/*
-video {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
-} */
+
+.timeframe td:not(.table-headers) {
+  font-weight: 50;
+  font-size: 15px;
+  line-height: 1.2;
+}
