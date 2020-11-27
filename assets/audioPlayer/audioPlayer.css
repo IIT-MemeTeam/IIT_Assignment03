@@ -155,10 +155,8 @@ background-color:rgba(0, 0, 0, .1);
 }
 
 a.plyr__controls__item.plyr__control {
-  width: 5px;
   padding-left: 10px;
   padding-right: 25px;
-  --plyr-control-padding:5px;
 }
 
 .plyr__progress--played,
